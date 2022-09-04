@@ -4,6 +4,8 @@
 
 body{
     font-family: poppins;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -12,7 +14,9 @@ body{
 .slider{
     display: flex;
     justify-content: center;
-
+    width: 100%;
+    /* height: 100%; */
+    height: 76.43vh;
 }
 
 
@@ -20,12 +24,13 @@ body{
 /* Talks - part */
 
 .container{
-    padding: 8em;
+    padding: 7em;
 }
 
 .from{
     font-weight: 600;
     font-size: 2.4vh;
+    width: 40vh;
 }
 
 
@@ -36,15 +41,16 @@ body{
 }
 
 .img1{
-    width: 80%;
+    width: 30vh;
     border-radius: 30vh;
-    margin-left: -3vh;
+    
 }
 
 .container1-right{
     padding-top: 16vh;
+    padding-left: 2em;
     color: #888888;
-    margin-left: -7vh;
+    
 }
 
 
@@ -78,6 +84,7 @@ body{
     padding-top: 16vh;
     color: #888888;
     text-align: right;
+    padding-right: 3em;
 }
 
 .container2-right{
@@ -85,7 +92,7 @@ body{
 }
 
 .img2{
-    width: 80%;
+    width: 30vh;
     border-radius: 50%;
 }
 
@@ -96,9 +103,12 @@ body{
     display: flex;
 }
 
+
+
 .container3-right{
-    padding-top: 16vh;
+    padding-top: 20vh;
     color: #888888;
-    margin-left: -7vh;
+    padding-left: 3em;
+    
 }
 
