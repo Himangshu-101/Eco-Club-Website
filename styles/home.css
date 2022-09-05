@@ -10,9 +10,6 @@ h2 {
     position: relative;
     margin-bottom: 4.5rem;
 }
-p{
-    color: #888;
-}
 h2::after{
     content: '';
     width: 4rem;
@@ -22,6 +19,9 @@ h2::after{
     bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
+}
+p{
+    color: #888;
 }
 
 
