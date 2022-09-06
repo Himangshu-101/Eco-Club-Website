@@ -47,6 +47,7 @@ p {
 }
 .card-content {
   font-size: 23px;
+  text-align: justify;
 }
 .event-header {
   color: #555;

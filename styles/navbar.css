@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    height: 70px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+.dropdown-menu{
+    margin-left: 190px;
+    margin-top: 16px !important;
+
+}
+
+.hide-element a{
+    text-decoration: none;
+    color: black;
+  
+}
+
+
+.hide{
+    display: flex;
+    
+  
+}
+
+
+.hide-element{
+    
+    list-style: none;
+    width: 150px;
+    margin: 2%;
+    text-align: center;
+}
+
+
+#logo{
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+    top: 21px;
+   
+}
+
+
+#logo-box{
+    font-size: 100%;
+    display: none;
+}
+
+#logo-box button {
+    display: none;
+    background-color: rgb(99, 218, 99);
+
+}
+
+
+#box-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+}
+#heading-name{
+    position: absolute;
+    left: 100px;
+    top: 22px;
+    font-family: 'Montserrat', sans-serif;}
+    
+
+
+
+/*................ media query ............. */
+@media(max-width:450px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 0.5fr 4fr;
+
+    }
+
+    .hide {
+        display: none;
+
+    }
+
+    #logo-box button {
+        display: block;
+        position: absolute;
+        right: 12px;
+        top: -30px;
+        
+
+    }
+    #logo-box{
+        display: block;
+
+    }
+    #heading{
+        top: 4px;
+    }
+}
