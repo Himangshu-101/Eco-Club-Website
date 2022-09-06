@@ -20,45 +20,66 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/navbar.css">
   <link rel="stylesheet" href="./styles/footer.css">
   <title>Home</title>
 </head>
 
 <body>
 
-  <div class="navbar-container">
+  <nav>
+    <div class="navbar">
 
-    <div class="navbar-logo-name">
+      <div class="box"><img id="logo" src="./images/eco-club-logo.jpg.jpg" alt="">
+        <h3 id="heading-name">Eco-Club</h3>
+      </div>
 
-      <img id="logo-img" src="./images/eco-club-logo.jpg" alt="">
 
-      <h3 id="club-name">eco club</h3>
+      <div class="box" id="logo-box">
+        &nbsp
 
+        <!--............... dropdown menu ................. -->
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+
+            <!--................ icon    .............. -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"> HOME</a></li>
+            <li><a class="dropdown-item" href="#"> NOIXORGO</a></li>
+            <li><a class="dropdown-item" href="#"> GALLERY</a></li>
+            <li><a class="dropdown-item" href="#"> EVENTS</a></li>
+            <li><a class="dropdown-item" href="#"> BLOG</a></li>
+            <li><a class="dropdown-item" href="#"> TEAM</a></li>
+          </ul>
+        </div>
+
+        <!--........... logo-box end....... -->
+      </div>
+
+
+      <!--............................ links  ............................ -->
+
+      <div id="box-3" class="box hide">
+
+        <ul class="hide">
+          <li class="hide-element"><a href="">HOME</a></li>
+          <li class="hide-element"><a href="">NOIXORGO</a></li>
+          <li class="hide-element"><a href="">GALLERY</a></li>
+          <li class="hide-element"><a href="">EVENTS</a></li>
+          <li class="hide-element"><a href="">BLOG</a></li>
+          <li class="hide-element"><a href="">TEAM</a></li>
+        </ul>
+      </div>
     </div>
-
-
-
-    <a href="./home.html">HOME</a>
-
-
-    <a href="./nox.html">NOIXORGO</a>
-
-
-
-    <a href="./Gallery.html">GALLERY</a>
-
-
-    <a href="./Event_photos.html">EVENTS</a>
-
-
-    <a href="./blog.html">BLOG</a>
-
-
-    <a href="./members.html">TEAM</a>
-
-
-
-  </div>
+  </nav>
 
   <!-- Upper Corousel starts -->
   <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
@@ -507,55 +528,119 @@
 
 
   <footer>
-    <div class="footer_containeer">
-      <div class="footer_box">
-        <p>Contact Us</p>
-        <div class="footer_box_1">
-          <i class="fa-solid fa-phone"></i>
-          <a href="tel:123-456-7890" target="_blank">+91 1234567890</a>
+    <div class="containeer">
+      <div class="box">
+        <p class="footer-p">Contact Us</p>
+        <div class="box_1">
+          <div>
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="kuch">+91 1234567890</div>
         </div>
-        <div class="footer_box_1">
-          <i class="fa-solid fa-location-dot"></i>
-          <a href="https://www.google.com/maps/place/National+Institute+Of+Technology,+Silchar/@24.7577144,92.7901042,17z/data=!3m1!4b1!4m5!3m4!1s0x374e49dcb63bae9b:0x81efa836714a289b!8m2!3d24.7577144!4d92.7922929"
-            target="_blank">NIT SILCHAR</a>
+        <div class="box_1">
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div>
+            <a href="https://www.google.com/maps/place/National+Institute+Of+Technology,+Silchar/@24.7577144,92.7901042,17z/data=!3m1!4b1!4m5!3m4!1s0x374e49dcb63bae9b:0x81efa836714a289b!8m2!3d24.7577144!4d92.7922929"
+              target="_blank">NIT SILCHAR</a>
+          </div>
         </div>
-        <div class="footer_box_1">
-          <i class="fa-regular fa-envelope"></i>
-          <a href="mailto: ecoclubactivity@nits.ac.in" target="blank">ecoclubactivity@nits.ac.in</a>
+        <div class="box_1">
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <div>
+            <a href="mailto: ecoclubactivity@nits.ac.in" target="blank">ecoclubactivity@nits.ac.in</a>
+          </div>
         </div>
-        <div class="footer_box_1">
-          <i class="fa-brands fa-instagram"></i>
-          <a href="https://www.instagram.com/eco_club_nits/" target="blank">eco_club_nits</a>
+        <div class="box_1">
+          <div>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/eco_club_nits/" target="blank">eco_club_nits</a>
+          </div>
         </div>
-        <div class="footer_box_1">
-          <i class="fa-brands fa-facebook"></i>
-          <a href="https://l.instagram.com/?u=https%3A%2F%2Fm.facebook.com%2Fnitsecoclub%2F%3Ftsid%3D0.7935080479496242%26source%3Dresult&e=ATP7jhg69HRisUR1Cv9UkrgE14602QuQBSYfivVTCdVj7Sg0bUUJuJAGhLgxOqhLhkexllnJJsnX4qKnBHr7Qw&s=1"
-            target="_blank">@nitsecoclub</a>
+        <div class="box_1">
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div>
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fm.facebook.com%2Fnitsecoclub%2F%3Ftsid%3D0.7935080479496242%26source%3Dresult&e=ATP7jhg69HRisUR1Cv9UkrgE14602QuQBSYfivVTCdVj7Sg0bUUJuJAGhLgxOqhLhkexllnJJsnX4qKnBHr7Qw&s=1"
+              target="_blank">@nitsecoclub</a>
+          </div>
         </div>
-        <div class="footer_box_1">
-          <i class="fa-brands fa-twitter"></i>
-          <a href="https://twitter.com/NitsEco" target="_blank">@NitsEco</a>
+        <div class="box_1">
+          <div>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div>
+            <a href="https://twitter.com/NitsEco" target="_blank">@NitsEco</a>
+          </div>
         </div>
       </div>
-      <div class="footer_box">
-        <p>Quick Links</p>
+      <div class="box">
+        <p class="footer-p">Quick Links</p>
         <ul>
-          <li><span>-</span><a href="#">Noixorgo</a></li>
-          <li><span>-</span><a href="#">Our Events</a></li>
-          <li><span>-</span><a href="#">Our Blogs</a></li>
-          <li><span>-</span><a href="#">Our Gallery</a></li>
-          <li><span>-</span><a href="#">Our Team</a></li>
+          <li>
+            <div class="box_1">
+              <div class="dash">-</div>
+              <div>
+                <a href="#">Noixorgo</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box_1">
+              <div class="dash">-</div>
+              <div>
+                <a href="#">Our Events</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box_1">
+              <div class="dash">-</div>
+              <div>
+                <a href="#">Our Blogs</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box_1">
+              <div class="dash">-</div>
+              <div>
+                <a href="#">Our Gallery</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box_1">
+              <div class="dash">-</div>
+              <div>
+                <a href="#">Our Team</a>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
-      <div class="footer_box">
-        <p>Developers</p>
+      <div class="box">
+        <p class="footer-p">Developers</p>
         <ul>
-          <li><span>-</span><a href="#">Members</a></li>
+          <li>
+            <div class="box_1">
+              <div class="dash">-</div>
+              <div>
+                <a href="#">Members</a>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
-      <div class="footer_box">
-        <p>Mail Us</p>
-        <div class="footer_box_1" id="mail">
+      <div class="box">
+        <p class="footer-p">Mail Us</p>
+        <div class="box_1" id="mail">
           <form action="">
             <input type="email" name="email" id="email" required placeholder="@your email.com">
           </form>
@@ -604,6 +689,8 @@
 
     splide.mount();
   </script>
+
+
 
   <!--Importing Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
