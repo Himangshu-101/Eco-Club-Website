@@ -6,7 +6,7 @@ body{
     margin: 0;    
 }
 
-h2 { 
+.Photos{ 
     font-weight: 500;
     font-size: 2rem;
     color: #43AB5F;
@@ -14,7 +14,7 @@ h2 {
     position: relative;
     margin-bottom: 4.5rem;
 }
-h2::after{
+.Photos::after{
     content: '';
     width: 4rem;
     height: 3px;
@@ -148,7 +148,7 @@ h2::after{
   a {
     text-decoration: none;
     position: relative;
-    left: 55px;
+    /* left: 55px; */
     color: black;
 
   }
