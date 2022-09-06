@@ -1,4 +1,65 @@
-h1{ 
+.navbar-container {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+  }
+
+  h2 { 
+    font-weight: 500;
+    font-size: 2rem;
+    color: #43AB5F;
+    text-align: center;
+    position: relative;
+    margin-bottom: 4.5rem;
+}
+h2::after{
+    content: '';
+    width: 4rem;
+    height: 3px;
+    background-color: #43AB5F;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+  a {
+    text-decoration: none;
+    position: relative;
+    left: 55px;
+    color: black;
+
+  }
+
+
+  a:hover {
+    color: rgb(51, 223, 51);
+  }
+
+  #club-name {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    top: -10px;
+  }
+
+  #logo-img {
+
+    height: 26px;
+    width: 26px;
+    position: relative;
+    left: -35px;
+    top: 24px;
+    border: 0px;
+    border-radius: 16px;
+  }
+
+
+.blog-h1{ 
     font-family:'Poppins',sans-serif;
     font-style:normal;
     font-weight: 500;
@@ -7,7 +68,7 @@ h1{
     text-align:center;
     position:relative;
     color: #43AB5F;
-    
+    margin-top: 3rem;
     
     /* Inside auto layout */
     flex: none;
@@ -34,7 +95,7 @@ hr:hover{
     transition: all ease 0.25s;
 }
         
-p{
+.blog-p{
     font-family: 'Poppins',sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -54,7 +115,7 @@ p{
     flex-grow: 0;
 }
 
-div {
+/* div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,9 +130,9 @@ div {
     box-shadow: -1.57565px 0px 6.30261px rgba(0, 0, 0, 0.08), 1.57565px 1.57565px 6.30261px rgba(0, 0, 0, 0.08);
     border-radius: 16px;
     
-}
+} */
 
-h2{
+/* h2{
     width: 1173px;
     height: 36px;
     font-family: 'Poppins',sans-serif;
@@ -81,21 +142,21 @@ h2{
     line-height: 36px;
     position: relative;
     
-    /* identical to box height */
-    /* 333333 */
+    identical to box height
+    333333
     
     color: #333333;
     
     
-    /* Inside auto layout */
+    Inside auto layout
     
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
-}
+} */
 
-img{
+.blog-img{
     max-width: 100%;
     height:50%;
 }

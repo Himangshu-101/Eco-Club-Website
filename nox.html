@@ -1,109 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>noxirgo</title>
-    
+
 </head>
+
 <body>
     <style>
-        header{
-            border:0ch
+        .navbar-container {
+            width: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 60px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            align-items: center;
         }
-        .first{
+
+        a {
+            text-decoration: none;
+            position: relative;
+            left: 55px;
+            color: black;
+
+        }
+
+
+        a:hover {
+            color: rgb(51, 223, 51);
+        }
+
+        #club-name {
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+            top: -10px;
+        }
+
+        #logo-img {
+
+            height: 26px;
+            width: 26px;
+            position: relative;
+            left: -35px;
+            top: 24px;
+            border: 0px;
+            border-radius: 16px;
+        }
+
+        header {
+            border: 0ch
+        }
+
+        .first {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        h1{
+
+        h1 {
             /* Noixorgo */
 
 
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 45.2539px;
-line-height: 68px;
-text-align: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 45.2539px;
+            line-height: 68px;
+            text-align: center;
 
-color: #43AB5F;
+            color: #43AB5F;
 
-
-
-        }
-        h2{
-            /* A weekly feed on Nature */
-
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 27px;
-/* identical to box height */
-text-align: center;
-
-color: rgba(67, 171, 95, 0.8);
 
 
         }
-        hr{
+
+        h2, h3 { 
+    font-weight: 500;
+    font-size: 2rem;
+    color: #43AB5F;
+    text-align: center;
+    position: relative;
+    margin-bottom: 4.5rem;
+}
+h3::after{
+    content: '';
+    width: 4rem;
+    height: 3px;
+    background-color: #43AB5F;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h3{
+    font-size: x-large;
+}
+
+h2{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+        hr {
             /* Line 1 */
 
-width: 98px;
-height: 0px;
+            width: 98px;
+            height: 0px;
 
-border: 2px solid rgba(67, 171, 95, 0.8);
+            border: 2px solid rgba(67, 171, 95, 0.8);
 
 
         }
-        .para{
+
+        .para {
             /* Noixorgo is a weekly segment released by the Eco Club every sunday, which gives an insight on different environmental matters that have transpired in that week. This is one of the oldest segments of the club and has been running for almost two years; educating and creating environmental awarness among it’s readers. A group of dedicated members from this club compile a set of fun and informative articles every week to captivate viewers, compelling them to know more of what is happening around them. This segment not only aims to promote environmental awarness, but also hopes to bring about an interest among the people and allure them to know more about our Mother Earth. */
 
 
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 27px;
-text-align: center;
- padding: 0 5rem;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+            padding: 0 5rem;
 
-color: #888888;
+            color: #888888;
 
 
         }
-        .cs{
+
+        .cs {
             /*coming soon*/
-    font: italic 1.2em "Fira Sans", serif;
-    font-size: 50px;
-    color:#004a2f;
-   text-align: center;
-   margin-top: 6rem;
-}
+            font: italic 1.2em "Fira Sans", serif;
+            font-size: 50px;
+            color: #004a2f;
+            text-align: center;
+            margin-top: 6rem;
+        }
     </style>
-    <header>
-    
-    <div class="first"></div>
-    
-                        <h1 >Noixorgo</h1>
-                        <h2>A weekly feed on nature </h2>
-                            <hr>
-                            <P class ="para" > Noixorgo is a weekly segment released by the Eco Club every sunday, which gives an 
-                            insight on different environmental matters that have transpired in that week. 
-                            This is one of the oldest segments of the club and has been running for almost two years;
-                             educating and creating environmental awarness among it's  readers. 
-                             A group of dedicated members from this club compile a set of fun and informative articles every week to
-                              captivate viewers, compelling them to know more of what is happening around them. 
-                              This segment not only aims to promote environmental awarness, but also hopes to bring about an interest 
-                              among the people and allure them to know more about our Mother Earth.</P>
-                             <p class="cs"><strong> Coming Soon . . .</strong> </p>
+
+    <div class="navbar-container">
+
+        <div class="navbar-logo-name">
+
+            <img id="logo-img" src="./images/eco-club-logo.jpg" alt="">
+
+            <h3 id="club-name">eco club</h3>
+
         </div>
-                       
-    </header>                
+
+
+
+        <a href="./home.html">HOME</a>
+
+
+        <a href="./nox.html">NOIXORGO</a>
+
+
+
+        <a href="./Gallery.html">GALLERY</a>
+
+
+        <a href="./Event_photos.html">EVENTS</a>
+
+
+        <a href="./blog.html">BLOG</a>
+
+
+        <a href="./members.html">TEAM</a>
+
+
+
+    </div>
+
+    <header>
+
+        <div class="first"></div>
+
+        <h2>Noixorgo</h2>
+        <h3>A weekly feed on nature </h3>
+        <!-- <hr> -->
+        <P class="para"> Noixorgo is a weekly segment released by the Eco Club every sunday, which gives an
+            insight on different environmental matters that have transpired in that week.
+            This is one of the oldest segments of the club and has been running for almost two years;
+            educating and creating environmental awarness among it's readers.
+            A group of dedicated members from this club compile a set of fun and informative articles every week to
+            captivate viewers, compelling them to know more of what is happening around them.
+            This segment not only aims to promote environmental awarness, but also hopes to bring about an interest
+            among the people and allure them to know more about our Mother Earth.</P>
+        <p class="cs"><strong> Coming Soon . . .</strong> </p>
+        </div>
+
+    </header>
+
+    <footer>
+        <div class="footer_containeer">
+            <div class="footer_box">
+                <p>Contact Us</p>
+                <div class="footer_box_1">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:123-456-7890" target="_blank">+91 1234567890</a>
+                </div>
+                <div class="footer_box_1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="https://www.google.com/maps/place/National+Institute+Of+Technology,+Silchar/@24.7577144,92.7901042,17z/data=!3m1!4b1!4m5!3m4!1s0x374e49dcb63bae9b:0x81efa836714a289b!8m2!3d24.7577144!4d92.7922929"
+                        target="_blank">NIT SILCHAR</a>
+                </div>
+                <div class="footer_box_1">
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto: ecoclubactivity@nits.ac.in" target="blank">ecoclubactivity@nits.ac.in</a>
+                </div>
+                <div class="footer_box_1">
+                    <i class="fa-brands fa-instagram"></i>
+                    <a href="https://www.instagram.com/eco_club_nits/" target="blank">eco_club_nits</a>
+                </div>
+                <div class="footer_box_1">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://l.instagram.com/?u=https%3A%2F%2Fm.facebook.com%2Fnitsecoclub%2F%3Ftsid%3D0.7935080479496242%26source%3Dresult&e=ATP7jhg69HRisUR1Cv9UkrgE14602QuQBSYfivVTCdVj7Sg0bUUJuJAGhLgxOqhLhkexllnJJsnX4qKnBHr7Qw&s=1"
+                        target="_blank">@nitsecoclub</a>
+                </div>
+                <div class="footer_box_1">
+                    <i class="fa-brands fa-twitter"></i>
+                    <a href="https://twitter.com/NitsEco" target="_blank">@NitsEco</a>
+                </div>
+            </div>
+            <div class="footer_box">
+                <p>Quick Links</p>
+                <ul>
+                    <li><span>-</span><a href="#">Noixorgo</a></li>
+                    <li><span>-</span><a href="#">Our Events</a></li>
+                    <li><span>-</span><a href="#">Our Blogs</a></li>
+                    <li><span>-</span><a href="#">Our Gallery</a></li>
+                    <li><span>-</span><a href="#">Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footer_box">
+                <p>Developers</p>
+                <ul>
+                    <li><span>-</span><a href="#">Members</a></li>
+                </ul>
+            </div>
+            <div class="footer_box">
+                <p>Mail Us</p>
+                <div class="footer_box_1" id="mail">
+                    <form action="">
+                        <input type="email" name="email" id="email" required placeholder="@your email.com">
+                    </form>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

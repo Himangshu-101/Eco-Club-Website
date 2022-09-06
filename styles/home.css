@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 23px;
+    /* font-size: 23px; */
 }
 h2 { 
     font-weight: 500;
@@ -9,9 +9,6 @@ h2 {
     text-align: center;
     position: relative;
     margin-bottom: 4.5rem;
-}
-p{
-    color: #888;
 }
 h2::after{
     content: '';
@@ -22,6 +19,9 @@ h2::after{
     bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
+}
+p{
+    color: #888;
 }
 
 
@@ -122,3 +122,44 @@ i.fa-clock {
     width: 100%;
     height: auto;
 }
+
+.navbar-container {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    position: relative;
+    left: 55px;
+    color: black;
+
+  }
+
+
+  a:hover {
+    color: rgb(51, 223, 51);
+  }
+
+  #club-name {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    top: -10px;
+  }
+
+  #logo-img {
+
+    height: 26px;
+    width: 26px;
+    position: relative;
+    left: -35px;
+    top: 24px;
+    border: 0px;
+    border-radius: 16px;
+  }
